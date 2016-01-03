@@ -1,0 +1,22 @@
+﻿<Window x:Class="EmpMgmtByMongo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmpMgmtByMongo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid Background="WhiteSmoke">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Button Name="createRecord" Content="Employee Record - Create" HorizontalAlignment="Stretch" Height="80" FontSize="20" Click="createRecord_Click"/>
+            <Button Name="readRecord" Content="Employee Record - Read" HorizontalAlignment="Stretch" Height="80" FontSize="20" Margin="0,10,0,0" Click="readRecord_Click"/>
+            <Button Name="updateRecord" Content="Employee Record - Update" HorizontalAlignment="Stretch" Height="80" FontSize="20" Margin="0,10,0,0" Click="updateRecord_Click"/>
+            <Button Name="deleteRecord" Content="Employee Record - Delete" HorizontalAlignment="Stretch" Height="80" FontSize="20" Margin="0,10,0,0" Click="deleteRecord_Click"/>
+        </StackPanel>
+        <ContentControl Name="MainContentHolder" Grid.Column="1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+    </Grid>
+</Window>
